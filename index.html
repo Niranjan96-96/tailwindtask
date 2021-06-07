@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title<my own task</task>
+<style>
+button{
+width:100px;
+height:35px;
+font-size:1.3em;
+float:left;
+margin-left:20px;
+margin-right:22px;
+</style>
+<script>
+function onOff(){
+var bulb=document.getElementById('myImage');
+if(bulb.src.match("./images/LightOff.png"))
+{bulb.src="./images/LightOn.png";}
+}
+function onOn()
+{
+var bulb=document.getElementById('myImage');
+if(bulb.src.match("./images/LightOn.png"))
+{bulb.src="./images/LightOff.png";}
+}
+</script>
+</head>
+<body>
+<section>
+<button onclick="onOff()">On^</button>
+<button onclick="onOn()">Off^</button>
+<hr style="border-width:10">
+<img src="./images/LightOff.png"id="myImage">
+</section>
+</body>
+</html>
